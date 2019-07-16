@@ -1,4 +1,7 @@
 public class FizzBuzz {
+	boolean isDivisibleByThreeAndFive(int n) {
+		return n%3 == 0 && n%5 ==0;
+	}
 	boolean isDivisibleByThree(int n){
 		return n%3 == 0;
 	}
@@ -9,7 +12,7 @@ public class FizzBuzz {
 		// TODO Auto-generated method stub
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		for(int i =1 ; i<=100;i++) {
-			if(fizzBuzz.isDivisibleByThree(i) && fizzBuzz.isDivisibleByFive(i))
+			if(fizzBuzz.isDivisibleByThreeAndFive(i))
 				System.out.print("FizzBuzz ");
 			else if(fizzBuzz.isDivisibleByThree(i))
 				System.out.print("Fizz ");
